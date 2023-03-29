@@ -63,8 +63,15 @@ class isik {
         return lemmiknumber;
     }
 
+    public String toStringer() {
+        return nimi+";"+vanus+";"+meeldibKokataJaKoristada + ";"+ muusikamaitse + ";" + kasMüsliOnSupp + ";" + raudVõiSulg +
+                ";" + meeldivadPikadJalutuskäigudRannas +
+                ";" + kasAnanassPitsal +
+                ";" + lemmiknumber;
+    }
+
     @Override
     public String toString() {
-        return nimi + ", kes on " + vanus + "aastat vana";
+        return nimi + ", kes on " + vanus + " aastat vana";
     }
 }

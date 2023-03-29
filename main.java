@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 public class main {
 
     private static List<isik> inimesed = new ArrayList<>();
@@ -38,20 +40,19 @@ public class main {
         return matchid;
     }
 
-    public static List<isik> failistLugemine(String failinimi) throws IOException {
+    public static void failistLugemine(String failinimi) throws IOException {
 
         File fail = new File(failinimi);
 
-        List<isik> andmed = new ArrayList<>();
         List<String> read = Files.readAllLines(fail.toPath(), StandardCharsets.UTF_8);
 
         for (String s : read) {
             boolean kokkamineKoristamine;
+            int sulgVõiRaud;
             boolean müslisupp;
             boolean jalutuskäik;
             boolean ananass;
-
-            String[] a = s.split("\t ");
+            String[] a = s.split(";");
             if (a[2] == "jah") {
                 kokkamineKoristamine = true;
             } else {
@@ -73,18 +74,16 @@ public class main {
                 ananass = false;
             }
 
-            isik tegelane = new isik(a[0], Integer.parseInt(a[1]), kokkamineKoristamine, a[3], müslisupp, Integer.parseInt(a[5]), jalutuskäik, ananass, a[8]);
-            andmed.add(tegelane);
+            isik tegelane = new isik(a[0], parseInt(a[1]), kokkamineKoristamine, a[3], müslisupp, parseInt(a[5]), jalutuskäik, ananass, a[8]);
+            inimesed.add(tegelane);
 
         }
-        return andmed;
     }
     public static void failiKirjutamine(String sõne, String failinimi) throws IOException {
         File file = new File(failinimi);
         FileWriter fr = new FileWriter(file,true);
         BufferedWriter br = new BufferedWriter(fr);
-        br.write(sõne);
-
+        br.write("\n"+sõne);
         br.close();
         fr.close();
     }
@@ -95,25 +94,48 @@ public class main {
         System.out.println("Sisesta nimi");
         String nimi = object.nextLine();
         System.out.println("Sisesta oma vanus(numbriga)");
-        int vanus = Integer.parseInt(object.nextLine());
+        int vanus = parseInt(object.nextLine());
         System.out.println("Kas sulle meeldib kokata ja koristada? (jah/ei)");
-        String kokkamineKoristamine = object.nextLine();
+        String kokkamineKoristamine1 = object.nextLine();
+        boolean kokkamineKoristamine = false;
+        if (kokkamineKoristamine1 == "jah\n") {
+            kokkamineKoristamine = true;
+        }
         System.out.println("Mis muusikat sa kuulad?(vasta sama kirjapildiga)" + "\n" + "koit toome" + "\n" + "liis lemsalu" + "\n" + "5 miiiinust" + "\n" + "genialistid" + "\n" + "ruja");
         String muusika = object.nextLine();
         System.out.println("Kas müsli on supp? (jah/ei)");
-        String müslisupp = object.nextLine();
+        String müslisupp1 = object.nextLine();
+        boolean müslisupp = false;
+        if (müslisupp1 == "jah\n") {
+            müslisupp = true;
+        }
         System.out.println("Kumb on raskem, kas kilo rauda või kilo sulgi? (vastus sisesta täisarvuna vahemikus 1 kuni 4");
-        int raudVõiSulg = Integer.parseInt(object.nextLine());
+        int raudVõiSulg = parseInt(object.nextLine());
         System.out.println("Kas nautled pikki jalutuskäike rannas? (jah/ei)");
-        String jalutuskäik = object.nextLine();
+        String jalutuskäik1 = object.nextLine();
+        boolean jalutuskäik = false;
+        if (jalutuskäik1 == "jah\n") {
+            jalutuskäik = true;
+        }
         System.out.println("Kumb on õige? pitsa ananassi peal või ananass pitsapeal?(jälgi vastates kirjapilti)");
-        String pitsa = object.nextLine();
+        String pitsa1 = object.nextLine();
+        boolean pitsa = false;
+        if (pitsa1 == "pitsa ananassi peal") {
+            pitsa = true;
+        }
         System.out.println("Sisesta oma lemmiknumber");
         String lemmiknumber = object.nextLine();
-
-
-        failiKirjutamine((nimi+"\t"+vanus+"\t"+kokkamineKoristamine+"\t"+muusika+"\t"+müslisupp+"\t"+raudVõiSulg+"\t"+jalutuskäik+"\t"+pitsa+"\t"+lemmiknumber), "andmebaas.txt");
-
-        isik Mihkel = new isik("Mihkel", 20, true, "Genialistid", true, 4, true, true, "1");
-    }
+        System.out.println("mitme erinevusega lepid sõbras?(numbriga)");
+        int erinevused = parseInt(object.nextLine());
+        isik uuritav = new isik(nimi,vanus,kokkamineKoristamine,muusika,müslisupp,raudVõiSulg,jalutuskäik,pitsa,lemmiknumber);
+        List<isik> sõbrad = leiaMatchid(uuritav, erinevused);
+        if (sõbrad.size() != 0) {
+            System.out.print("Meie andmebaasis sulle sarnased inimesed: ");
+            for (isik sõber: sõbrad) {
+                System.out.print(sõber.toString() +", ");
+            }
+        } else {
+            System.out.println("Meie andmebaasis sulle sõpru ei leidu");
+        }
+        failiKirjutamine((nimi+";"+vanus+";"+kokkamineKoristamine1+";"+muusika+";"+müslisupp1+";"+raudVõiSulg+";"+jalutuskäik1+";"+pitsa1+";"+lemmiknumber), "andmebaas.txt");}
 }
