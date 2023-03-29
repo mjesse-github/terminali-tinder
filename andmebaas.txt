@@ -1,13 +1,13 @@
 Jens;18;jah;koit toome;ei;4;ei;ananass pitsapeal;Valik 26
 Riki?;20;jah;5 miiiinust;jah;2;jah;pitsa ananassi peal;Valik 26
 Hanna;30;jah;ruja;ei;1;jah;ananass pitsapeal;Valik 26
-Tuudur Jürgen Utt;20;ei;ruja;ei;4;jah;pitsa ananassi peal;Valik 26
+Tuudur Jürgen;20;ei;ruja;ei;4;jah;pitsa ananassi peal;Valik 26
 Laim;21;jah;ruja;jah;3;jah;pitsa ananassi peal;Valik 26
 martin;20;ei;genialistid;jah;2;jah;pitsa ananassi peal;Valik 26
 tiit sulling 2;69;jah;5 miiiinust;ei;2;ei;pitsa ananassi peal;Valik 26
 Martti;19;ei;5 miiiinust;ei;1;jah;pitsa ananassi peal;Valik 26
 Su Ema;69;ei;5 miiiinust;jah;4;jah;pitsa ananassi peal;Valik 26
-Uku Süvari;18;jah;ruja;jah;1;ei;pitsa ananassi peal;Valik 26
+Uku;18;jah;ruja;jah;1;ei;pitsa ananassi peal;Valik 26
 Leho;20;jah;5 miiiinust;jah;4;ei;ananass pitsapeal;Valik 26
 Kht;24;ei;genialistid;jah;3;ei;pitsa ananassi peal;Valik 26
 Kaspar;19;ei;ruja;jah;3;jah;pitsa ananassi peal;Valik 26
@@ -41,7 +41,7 @@ Annabel;20;jah;5 miiiinust;ei;3;jah;ananass pitsapeal;69
 imin;19;jah;koit toome;jah;4;jah;pitsa ananassi peal;69
 Ken;19;ei;genialistid;jah;1;jah;ananass pitsapeal;69
 Olivia;19;jah;genialistid;jah;4;jah;pitsa ananassi peal;69
-Chris-Robin Talts;17;jah;genialistid;ei;4;jah;pitsa ananassi peal;69
+Chris-Robin;17;jah;genialistid;ei;4;jah;pitsa ananassi peal;69
 kent;7;jah;liis lemsalu;ei;3;ei;ananass pitsapeal;69
 eliise;19;ei;5 miiiinust;ei;3;jah;ananass pitsapeal;69
 krit;17;jah;koit toome;ei;3;jah;pitsa ananassi peal;69
@@ -59,18 +59,18 @@ leo;19;ei;genialistid;jah;3;jah;pitsa ananassi peal;59
 stella-maria;18;jah;genialistid;ei;4;ei;ananass pitsapeal;59
 marian;15;ei;5 miiiinust;ei;2;jah;ananass pitsapeal;59
 Alise;23;ei;genialistid;ei;1;jah;pitsa ananassi peal;52
-Karl-Mattias Moor;20;ei;koit toome;jah;3;jah;ananass pitsapeal;52
+Karl-Mattias;20;ei;koit toome;jah;3;jah;ananass pitsapeal;52
 Tsau Kirke ma vastan uuesti;20;ei;koit toome;ei;3;jah;ananass pitsapeal;52
 ST;21;ei;ruja;ei;3;jah;ananass pitsapeal;49
 Peeter Oja jr;45;jah;ruja;ei;2;jah;ananass pitsapeal;48
 OLARI;21;ei;genialistid;ei;3;jah;pitsa ananassi peal;48
-Reio Leinus;18;jah;genialistid;ei;2;ei;ananass pitsapeal;48
-marleen mändul;20;ei;genialistid;ei;4;jah;pitsa ananassi peal;47
+Reio;18;jah;genialistid;ei;2;ei;ananass pitsapeal;48
+marleen;20;ei;genialistid;ei;4;jah;pitsa ananassi peal;47
 Sander;27;ei;koit toome;ei;3;jah;pitsa ananassi peal;47
 Liise;20;jah;ruja;jah;2;jah;pitsa ananassi peal;47
 Jones;19;jah;ruja;jah;3;jah;pitsa ananassi peal;46
 Brett;21;ei;ruja;ei;3;jah;ananass pitsapeal;45
-Emma Mägi;150;jah;5 miiiinust;ei;4;ei;ananass pitsapeal;44
+Emma;150;jah;5 miiiinust;ei;4;ei;ananass pitsapeal;44
 vik;18;jah;ruja;ei;3;jah;pitsa ananassi peal;44
 Wonder;20;jah;ruja;jah;3;jah;pitsa ananassi peal;44
 Andreas;19;jah;liis lemsalu;ei;3;ei;ananass pitsapeal;44
@@ -79,15 +79,15 @@ Matilda;17;jah;5 miiiinust;ei;1;jah;pitsa ananassi peal;34
 Mukesh;22;jah;genialistid;ei;3;ei;pitsa ananassi peal;34
 Markus;20;ei;5 miiiinust;ei;3;jah;pitsa ananassi peal;34
 Karl;19;jah;5 miiiinust;jah;3;jah;pitsa ananassi peal;34
-Priidik Meelo Västrik;20;jah;genialistid;ei;3;jah;pitsa ananassi peal;34
+Priidik;20;jah;genialistid;ei;3;jah;pitsa ananassi peal;34
 rannu;20;jah;ruja;jah;4;jah;pitsa ananassi peal;27
-Marin-Brith Põldma;19;ei;koit toome;jah;3;jah;pitsa ananassi peal;27
-sander valt;22;ei;koit toome;ei;3;jah;pitsa ananassi peal;27
-Hildegard Kivisaar;17;ei;genialistid;ei;4;jah;ananass pitsapeal;27
-Darius ;2;jah;liis lemsalu;ei;2;jah;ananass pitsapeal;27
+Marin-Brith;19;ei;koit toome;jah;3;jah;pitsa ananassi peal;27
+sander;22;ei;koit toome;ei;3;jah;pitsa ananassi peal;27
+Hildegard;17;ei;genialistid;ei;4;jah;ananass pitsapeal;27
+Darius;2;jah;liis lemsalu;ei;2;jah;ananass pitsapeal;27
 Mati;19;jah;genialistid;ei;1;jah;ananass pitsapeal;27
 liilia;19;jah;genialistid;ei;2;jah;ananass pitsapeal;27
-Maia Selis;22;jah;ruja;ei;3;ei;ananass pitsapeal;27
+Maia;22;jah;ruja;ei;3;ei;ananass pitsapeal;27
 Clauts;19;ei;ruja;ei;4;jah;pitsa ananassi peal;24
 Karoliina ;19;ei;koit toome;ei;3;jah;pitsa ananassi peal;24
 Õnne;20;jah;genialistid;jah;1;jah;pitsa ananassi peal;24
@@ -95,20 +95,20 @@ Joss;20;ei;ruja;ei;1;ei;pitsa ananassi peal;24
 k;20;jah;genialistid;jah;3;ei;pitsa ananassi peal;24
 hendrjk;19;ei;5 miiiinust;ei;2;jah;ananass pitsapeal;19
 David;19;ei;5 miiiinust;ei;4;ei;pitsa ananassi peal;19
-Richard Miikael Jaks;19;jah;ruja;jah;3;jah;pitsa ananassi peal;6
-Triin joon;20;ei;ruja;ei;3;jah;pitsa ananassi peal;3
+Richard Miikael;19;jah;ruja;jah;3;jah;pitsa ananassi peal;6
+Triin;20;ei;ruja;ei;3;jah;pitsa ananassi peal;3
 Laura;18;jah;5 miiiinust;ei;3;jah;ananass pitsapeal;3
 ei ütle;20;jah;genialistid;jah;3;jah;pitsa ananassi peal;3
 namu;99;ei;ruja;jah;2;jah;pitsa ananassi peal;1
-linda marie zimmer;20;jah;genialistid;jah;1;jah;ananass pitsapeal;1
+linda marie;20;jah;genialistid;jah;1;jah;ananass pitsapeal;1
 Kaia;18;jah;ruja;ei;4;jah;ananass pitsapeal;1
 jax;21;jah;genialistid;ei;1;jah;ananass pitsapeal;1
 Katse;52;ei;5 miiiinust;ei;4;jah;ananass pitsapeal;1
 Uq;21;jah;genialistid;jah;1;jah;pitsa ananassi peal;1
-Elise Õispuu;21;jah;genialistid;jah;4;jah;ananass pitsapeal;1
+Elise;21;jah;genialistid;jah;4;jah;ananass pitsapeal;1
 Märten;22;ei;ruja;jah;4;jah;ananass pitsapeal;1
 Sonja;19;jah;koit toome;ei;3;jah;ananass pitsapeal;1
-Kätliin Kaasik;18;jah;genialistid;jah;2;jah;pitsa ananassi peal;1
+Kätliin;18;jah;genialistid;jah;2;jah;pitsa ananassi peal;1
 GG;20;jah;koit toome;ei;3;ei;pitsa ananassi peal;1
 Mattias;19;jah;ruja;jah;1;ei;ananass pitsapeal;1
 Liisa;19;ei;ruja;jah;2;jah;pitsa ananassi peal;Valik 26
@@ -121,7 +121,3 @@ piret;19;ei;ruja;jah;3;jah;pitsa ananassi peal;Valik 26
 Georg-Romet;22;ei;5 miiiinust;ei;4;jah;ananass pitsapeal;69
 Jüri;23;ei;ruja;jah;3;jah;pitsa ananassi peal;83
 Mihkel;20;jah;genialistid;jah;2;jah;pitsa ananassi peal;valik 26
-mihkel;20;jah;genialistid;jah;2;jah;pitsa ananassi peal;valik 26
-Mihkel;20;jah;koit toome;jah;2;jah;pitsa ananassi peal;69
-mihkel;20;jah;genialistid;jah;2;jah;pitsa ananassi peal;69
-Mihkel;20;jah;genialistid;jah;1;ananass pitsapeal;1;1
