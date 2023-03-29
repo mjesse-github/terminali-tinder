@@ -4,6 +4,7 @@ class isik {
     private boolean meeldibKokataJaKoristada;
     private String muusikamaitse;
     private boolean kasMüsliOnSupp;
+    private int raudVõiSulg;
     private boolean meeldivadPikadJalutuskäigudRannas;
     private boolean kasAnanassPitsal;
     private String lemmiknumber; //tere
@@ -13,6 +14,7 @@ class isik {
                 boolean meeldibKokataJaKoristada,
                 String muusikamaitse,
                 boolean kasMüsliOnSupp,
+                int raudVõiSulg,
                 boolean meeldivadPikadJalutuskäigudRannas,
                 boolean kasAnanassPitsal,
                 String lemmiknumber) {
@@ -21,6 +23,7 @@ class isik {
         this.meeldibKokataJaKoristada = meeldibKokataJaKoristada;
         this.muusikamaitse = muusikamaitse;
         this.kasMüsliOnSupp = kasMüsliOnSupp;
+        this.raudVõiSulg = raudVõiSulg;
         this.meeldivadPikadJalutuskäigudRannas = meeldivadPikadJalutuskäigudRannas;
         this.kasAnanassPitsal = kasAnanassPitsal;
         this.lemmiknumber = lemmiknumber;
@@ -45,6 +48,8 @@ class isik {
     public boolean isKasMüsliOnSupp() {
         return kasMüsliOnSupp;
     }
+
+    public int getRaudVõiSulg() {return raudVõiSulg;}
 
     public boolean isMeeldivadPikadJalutuskäigudRannas() {
         return meeldivadPikadJalutuskäigudRannas;
