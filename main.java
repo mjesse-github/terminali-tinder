@@ -62,12 +62,12 @@ public class main {
             } else {
                 müslisupp = false;
             }
-            if (a[5] == "jah") {
+            if (a[6] == "jah") {
                 jalutuskäik = true;
             } else {
                 jalutuskäik = false;
             }
-            if (a[6] == "pitsa ananassi peal") {
+            if (a[7] == "pitsa ananassi peal") {
                 ananass = true;
             } else {
                 ananass = false;
@@ -111,7 +111,7 @@ public class main {
         System.out.println("Sisesta oma lemmiknumber");
         String lemmiknumber = object.nextLine();
 
-        
+
         failiKirjutamine((nimi+"\t"+vanus+"\t"+kokkamineKoristamine+"\t"+muusika+"\t"+müslisupp+"\t"+raudVõiSulg+"\t"+jalutuskäik+"\t"+pitsa+"\t"+lemmiknumber), "andmebaas.txt");
 
         isik Mihkel = new isik("Mihkel", 20, true, "Genialistid", true, 4, true, true, "1");
