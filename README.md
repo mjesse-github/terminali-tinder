@@ -1,8 +1,5 @@
 # terminali-tinder
-database tekstifailina
-eesnimi | sugu | vanus | kas meeldivad pikad jalutuskäigud rannas | sokid seksiajal ?  |
-
-1. Inimlik tegevus - paarilise leidmine
+1. Inimlik tegevus - sõbra leidmine
 2. Mida sisendina küsib - Küsib enda kohta
 3. Ei ole eelteadmisi vaja, kogu info enne sisendit
 4. Randomiga valib suvalise inimese sobivate listist, kui pole eelistust
