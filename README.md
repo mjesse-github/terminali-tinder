@@ -1,10 +1,30 @@
-# terminali-tinder
-1. Inimlik tegevus - sõbra leidmine
-2. Mida sisendina küsib - Küsib enda kohta
-3. Ei ole eelteadmisi vaja, kogu info enne sisendit
-4. Randomiga valib suvalise inimese sobivate listist, kui pole eelistust
-5. Programm peab koosnema mitmest klassist (sh. peaklass). Andmete kasutamine peaks käima erinevate objektide abil. Selleks loodud klassid peaksid sisaldama isendivälju, konstruktoreid, get- ja set-meetodeid ja teisi vajalikke meetodeid.
-6. 
-Kasutajaga suhtlemine peaks olema väga elementaarselt kujundatud. Vältida (veel) graafilist kasutajaliidest. Ekraanile kuvatav info (ka näiteks mänguseis) võib olla tekstiridadena (System.out.println). Kasutajaga dialoogi võib realiseerida mitmeti. Näiteks klassi Scanner (vt. Praktikum 1) kasutades või alltoodud JOptionPane meetodeid kasutades. Programmi käivitamiseks vajalikku alginfot võib nõuda ka käsurea argumentidena (vt. Nädal 2).
-Kasutajaga dialoogi korraldamisel on abiks, kui programmi algusesse, lausa enne klassi kirjelduse algust, panna rida import javax.swing.JOptionPane;
-Kohale, kus programm peaks kasutajalt sõne küsima, tuleb panna rida
+OOP projekt
+
+Autorid: Mihkel Jesse ja Kirke Valt
+
+Programmi kirjeldus
+Programmi eesmärk on leida spetsiifiliste küsimuste vastuste põhjal kasutajale kõige paremini sobiv semu vastavalt vastuste ühtivusele.
+
+Programmi käivitades küsib arvuti kasutajalt küsimusi, millele tuleb vastata korrektselt juhendi järgi. Siis küsib programm mitu erinevust võib otsitaval olla, et ta veel sobiks ning siis käib läbi tekstifaili  ning meetodiga leiaMatchid leiab vastavatele tingimustele sobiva(d) kandidaadi(d) ja väljastab ekraanile nende nime(d) ja vanuse(d). Kui aga sobivat kandidaati ei leidu, väljastab ekraanile vastava teate.
+
+Programm kirjutab kasutaja sisestatud andmed samasse faili, pakkudes selle variandiks uutele kasutajatele.
+
+Isiku klassi läbi saame luua isikute objekte, mis salvestav kõik andmed ning aitab pärast võrrelda teiste isikutega.
+Peaklassis toimub faili sisselugemine, informatsiooni sisestamine, sõprade leidmine ning lõpuks ka faili väljundina lisandunud kasutaja kirjutamine.
+
+Protsessi kirjeldus
+Esimese asjana lõime küsimustiku, mille abil luua inimeste andmebaas. Peale andmebaasi loomist kirjutasime kordamööda koodi omavahel pidevalt konsulteerides.
+
+rühmaliikme panused + ajakulu
+Koos lõime küsimustiku,
+Kirke lõi tekstifaili, failist sisselugemise meetodi, faili kirjutamise meetodi.
+Mihkel tegi isikuklassi ning funktsionaalsuse, mis otsis sobivad sõpru ning vaatas üle koodi kompileeruvuse ning viis sisse osad parandused.
+
+tegemine
+Tundsime, et kõik läks sujuvalt ja olime kõik vajalikud oskused varasemalt omandanud
+
+ hinnang oma töö lõpptulemusele 
+Arvestades esimese projekti nõudeid tegime kõik uhkelt ära ning lisanduva funktsionaalsuse saame lisada luues teist projekti.
+
+selgitus ja/või näited kuidas programmi osi eraldi ja programmi tervikuna testisime ehk kuidas veendusime et programm töötab korrektselt
+Meil on ka andmebaas Google Sheetsina, milles saime filtrite abil võrrelda ning kontrollida väljundeid.
