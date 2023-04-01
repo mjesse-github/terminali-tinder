@@ -1,22 +1,25 @@
-class isik {
-    private String nimi;
-    private int vanus;
-    private boolean meeldibKokataJaKoristada;
-    private String muusikamaitse;
-    private boolean kasMüsliOnSupp;
-    private int raudVõiSulg;
-    private boolean meeldivadPikadJalutuskäigudRannas;
-    private boolean kasAnanassPitsal;
-    private String lemmiknumber; //tere
+import java.util.Collection;
+import java.util.UUID;
+
+class isik implements Comparable<isik> {
+    private static String nimi;
+    private static int vanus;
+    private static String meeldibKokataJaKoristada;
+    private static String muusikamaitse;
+    private static String kasMüsliOnSupp;
+    private static int raudVõiSulg;
+    private static String meeldivadPikadJalutuskäigudRannas;
+    private static String kasAnanassPitsal;
+    private static String lemmiknumber; //tere
 
     public isik(String nimi,
                 int vanus,
-                boolean meeldibKokataJaKoristada,
+                String meeldibKokataJaKoristada,
                 String muusikamaitse,
-                boolean kasMüsliOnSupp,
+                String kasMüsliOnSupp,
                 int raudVõiSulg,
-                boolean meeldivadPikadJalutuskäigudRannas,
-                boolean kasAnanassPitsal,
+                String meeldivadPikadJalutuskäigudRannas,
+                String kasAnanassPitsal,
                 String lemmiknumber) {
         this.nimi = nimi;
         this.vanus = vanus;
@@ -29,7 +32,7 @@ class isik {
         this.lemmiknumber = lemmiknumber;
     }
 
-    public String getNimi() {
+    public static String getNimi() {
         return nimi;
     }
 
@@ -37,33 +40,33 @@ class isik {
         return vanus;
     }
 
-    public boolean isMeeldibKokataJaKoristada() {
+    public static String getMeeldibKokataJaKoristada() {
         return meeldibKokataJaKoristada;
     }
 
-    public String getMuusikamaitse() {
+    public static String getMuusikamaitse() {
         return muusikamaitse;
     }
 
-    public boolean isKasMüsliOnSupp() {
+    public static String getKasMüsliOnSupp() {
         return kasMüsliOnSupp;
     }
 
     public int getRaudVõiSulg() {return raudVõiSulg;}
 
-    public boolean isMeeldivadPikadJalutuskäigudRannas() {
+    public static String getMeeldivadPikadJalutuskäigudRannas() {
         return meeldivadPikadJalutuskäigudRannas;
     }
 
-    public boolean isKasAnanassPitsal() {
+    public String getKasAnanassPitsal() {
         return kasAnanassPitsal;
     }
 
-    public String getLemmiknumber() {
+    public static String getLemmiknumber() {
         return lemmiknumber;
     }
 
-    public String toStringer() {
+    public static String toStringer() {
         return nimi+";"+vanus+";"+meeldibKokataJaKoristada + ";"+ muusikamaitse + ";" + kasMüsliOnSupp + ";" + raudVõiSulg +
                 ";" + meeldivadPikadJalutuskäigudRannas +
                 ";" + kasAnanassPitsal +
@@ -73,5 +76,10 @@ class isik {
     @Override
     public String toString() {
         return nimi + ", kes on " + vanus + " aastat vana";
+    }
+
+    @Override
+    public int compareTo(isik o) {
+        return 0;
     }
 }
