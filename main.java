@@ -14,25 +14,28 @@ public class main {
 
     public static List<isik> leiaMatchid(isik otsivIsik, int lubatudVead, andmebaas andmed) throws IOException {
         List<isik> matchid = new ArrayList<>();
-            for (isik isik : andmed.getAndmed()) {
+        for (isik isik : andmed.getAndmed()) {
             int counter = 0;
 
-            if (otsivIsik.getMeeldibKokataJaKoristada() != isik.getMeeldibKokataJaKoristada()) {
+            if (!isik.getMeeldibKokataJaKoristada().contains(otsivIsik.getMeeldibKokataJaKoristada())) {
                 counter+=1;
             }
-            if (otsivIsik.getMuusikamaitse() != isik.getMuusikamaitse()) {
+            if (!isik.getMuusikamaitse().contains(otsivIsik.getMuusikamaitse())) {
                 counter+=1;
             }
-            if (otsivIsik.getKasMüsliOnSupp() != isik.getKasMüsliOnSupp()) {
+            if (!isik.getKasMüsliOnSupp().contains(otsivIsik.getKasMüsliOnSupp())) {
                 counter+=1;
             }
-            if (otsivIsik.getMeeldivadPikadJalutuskäigudRannas() != isik.getMeeldivadPikadJalutuskäigudRannas()) {
+            if (!isik.getMeeldivadPikadJalutuskäigudRannas().contains(otsivIsik.getMeeldivadPikadJalutuskäigudRannas())) {
                 counter+=1;
             }
-            if (otsivIsik.getLemmiknumber() != isik.getLemmiknumber()) {
+            if (!isik.getLemmiknumber().contains(otsivIsik.getLemmiknumber())) {
                 counter+=1;
             }
-            System.out.println(counter);
+            if (!isik.getKasAnanassPitsal().contains(otsivIsik.getKasAnanassPitsal())) {
+                counter+=1;
+            }
+            if (isik.getRaudVõiSulg() != otsivIsik.getRaudVõiSulg())
             if (counter <= lubatudVead) {
                 matchid.add(isik);
                 }
@@ -67,63 +70,48 @@ public class main {
     public static void main(String[] args) throws IOException {
         andmebaas andmed = new andmebaas();
         failistLugemine("andmebaas.txt", andmed);
-        for (isik isik: andmed.getAndmed()) {
-            System.out.println(isik.toString());
-        }
-        /*
+
         Scanner object = new Scanner(System.in);
         System.out.println("Sisesta nimi");
         String nimi = object.nextLine();
         System.out.println("Sisesta oma vanus(numbriga)");
         int vanus = parseInt(object.nextLine());
         System.out.println("Kas sulle meeldib kokata ja koristada? (jah/ei)");
-        String kokkamineKoristamine1 = object.nextLine();
-        boolean kokkamineKoristamine = false;
-        if (kokkamineKoristamine1 == "jah\n") {
-            kokkamineKoristamine = true;
-        }
+        String kokkamineKoristamine = object.nextLine();
         System.out.println("Mis muusikat sa kuulad?(vasta sama kirjapildiga)" + "\n" + "koit toome" + "\n" + "liis lemsalu" + "\n" + "5 miiiinust" + "\n" + "genialistid" + "\n" + "ruja");
         String muusika = object.nextLine();
         System.out.println("Kas müsli on supp? (jah/ei)");
-        String müslisupp1 = object.nextLine();
-        boolean müslisupp = false;
-        if (müslisupp1 == "jah\n") {
-            müslisupp = true;
-        }
+        String müslisupp = object.nextLine();
         System.out.println("Kumb on raskem, kas kilo rauda või kilo sulgi? (vastus sisesta täisarvuna vahemikus 1 kuni 4");
         int raudVõiSulg = parseInt(object.nextLine());
         System.out.println("Kas nautled pikki jalutuskäike rannas? (jah/ei)");
-        String jalutuskäik1 = object.nextLine();
-        boolean jalutuskäik = false;
-        if (jalutuskäik1 == "jah\n") {
-            jalutuskäik = true;
-        }
+        String jalutuskäik = object.nextLine();
         System.out.println("Kumb on õige? pitsa ananassi peal või ananass pitsapeal?(jälgi vastates kirjapilti)");
-        String pitsa1 = object.nextLine();
-        boolean pitsa = false;
-        if (pitsa1 == "pitsa ananassi peal") {
-            pitsa = true;
-        }
+        String pitsa = object.nextLine();
         System.out.println("Sisesta oma lemmiknumber");
         String lemmiknumber = object.nextLine();
         int erinevused = 0;
+
         isik uuritav = new isik(nimi,vanus,kokkamineKoristamine,muusika,müslisupp,raudVõiSulg,jalutuskäik,pitsa,lemmiknumber);
+
+
         List<isik> sõbrad = new ArrayList<>();
         System.out.println(uuritav.toStringer());
         while (sõbrad.size() == 0) {
-            System.out.println(sõbrad.size());
-            sõbrad = leiaMatchid(uuritav, erinevused);
-            erinevused ++;
+            sõbrad = leiaMatchid(uuritav, erinevused, andmed);
+            if (sõbrad.size() != 0) {
+                break;
+            } else {
+                erinevused ++;
+            }
         }
-        System.out.println(erinevused);
-        System.out.println(sõbrad.size());
         System.out.print("Meie andmebaasis sulle sarnased inimesed: ");
         for (isik sõber: sõbrad) {
             System.out.print(sõber.toString() +", ");
         }
         System.out.print("\n");
-        System.out.println("Soovitame sul kasiinos panustada kogu oma raha numbrile" + (int)(Math.random()*40));
-        failiKirjutamine((nimi+";"+vanus+";"+kokkamineKoristamine1+";"+muusika+";"+müslisupp1+";"+raudVõiSulg+";"+jalutuskäik1+";"+pitsa1+";"+lemmiknumber), "andmebaas.txt");}
-        */
-}}
+        System.out.println("Soovitame sul ruletis panustada kogu oma raha numbrile " + (int)(Math.random()*40));
+        failiKirjutamine((nimi+";"+vanus+";"+kokkamineKoristamine+";"+muusika+";"+müslisupp+";"+raudVõiSulg+";"+jalutuskäik+";"+pitsa+";"+lemmiknumber), "andmebaas.txt");
+    }
+}
 

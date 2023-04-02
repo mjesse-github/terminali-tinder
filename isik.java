@@ -1,16 +1,13 @@
-import java.util.Collection;
-import java.util.UUID;
-
-class isik implements Comparable<isik> {
-    private static String nimi;
-    private static int vanus;
-    private static String meeldibKokataJaKoristada;
-    private static String muusikamaitse;
-    private static String kasMüsliOnSupp;
-    private static int raudVõiSulg;
-    private static String meeldivadPikadJalutuskäigudRannas;
-    private static String kasAnanassPitsal;
-    private static String lemmiknumber; //tere
+class isik {
+    private String nimi;
+    private int vanus;
+    private String meeldibKokataJaKoristada;
+    private String muusikamaitse;
+    private String kasMüsliOnSupp;
+    private int raudVõiSulg;
+    private String meeldivadPikadJalutuskäigudRannas;
+    private String kasAnanassPitsal;
+    private String lemmiknumber; //tere
 
     public isik(String nimi,
                 int vanus,
@@ -32,7 +29,7 @@ class isik implements Comparable<isik> {
         this.lemmiknumber = lemmiknumber;
     }
 
-    public static String getNimi() {
+    public String getNimi() {
         return nimi;
     }
 
@@ -40,21 +37,21 @@ class isik implements Comparable<isik> {
         return vanus;
     }
 
-    public static String getMeeldibKokataJaKoristada() {
+    public String getMeeldibKokataJaKoristada() {
         return meeldibKokataJaKoristada;
     }
 
-    public static String getMuusikamaitse() {
+    public String getMuusikamaitse() {
         return muusikamaitse;
     }
 
-    public static String getKasMüsliOnSupp() {
+    public String getKasMüsliOnSupp() {
         return kasMüsliOnSupp;
     }
 
     public int getRaudVõiSulg() {return raudVõiSulg;}
 
-    public static String getMeeldivadPikadJalutuskäigudRannas() {
+    public  String getMeeldivadPikadJalutuskäigudRannas() {
         return meeldivadPikadJalutuskäigudRannas;
     }
 
@@ -62,11 +59,11 @@ class isik implements Comparable<isik> {
         return kasAnanassPitsal;
     }
 
-    public static String getLemmiknumber() {
+    public String getLemmiknumber() {
         return lemmiknumber;
     }
 
-    public static String toStringer() {
+    public String toStringer() {
         return nimi+";"+vanus+";"+meeldibKokataJaKoristada + ";"+ muusikamaitse + ";" + kasMüsliOnSupp + ";" + raudVõiSulg +
                 ";" + meeldivadPikadJalutuskäigudRannas +
                 ";" + kasAnanassPitsal +
@@ -76,10 +73,5 @@ class isik implements Comparable<isik> {
     @Override
     public String toString() {
         return nimi + ", kes on " + vanus + " aastat vana";
-    }
-
-    @Override
-    public int compareTo(isik o) {
-        return 0;
     }
 }

@@ -12,7 +12,6 @@ public class andmebaas {
     }
 
     public void lisaIsik(isik lisatav) {
-        System.out.println("lisatud: " + lisatav.toString()); //testimiseks
         andmed.add(lisatav);
     }
 }
